@@ -4,16 +4,6 @@ git clone git@github.com:f-katkit/hugo-on-arukas.git ./${new-project-name}
 cd ${new-project-name}
 ```
 
-### push as your project
-Create your repository on github beforehand.
-
-```
-rm -rf .git
-git init
-git remote add origin git@github.com:${username}/${new-project-name}.git
-git push -u origin master
-```
-
 ### build a docker image
 ```
 docker build -t ${image_name} .
